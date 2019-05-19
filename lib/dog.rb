@@ -8,10 +8,10 @@ require_relative "../config/environment.rb"
       @id = id
       @name = name
       @breed = breed
-   end
+    end
 
-    def self.create_table
-      sql = <<-SQL
+     def self.create_table
+       sql = <<-SQL
          CREATE TABLE IF NOT EXISTS dogs (
          id INTEGER PRIMARY KEY,
          name TEXT,
