@@ -6,7 +6,8 @@ class Dog
   def initialize(id=nil, name, breed)
     self.id = id
     self.name = name
-    self.breed = breed
+    self.breed = breed 
+  end
   
   def self.create_table
     sql = <<-SQL
